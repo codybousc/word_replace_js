@@ -16,9 +16,10 @@ $(document).ready(function(){
     var user_word_replace = $("input#replace_word").val();
     var new_string = wordReplace(user_sentence_init, user_word_init, user_word_replace);
 
+
+      $(".new_sentence").text(new_string);
       $("#result").show();
-      $(".new_sentence").show();
-      alert(new_string);
+
     event.preventDefault();
   });
 });
